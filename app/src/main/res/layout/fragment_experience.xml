@@ -9,6 +9,10 @@
             name="experiences"
             type="java.util.List&lt;com.emreonal.cvapp.presentation.experience.ExperienceItem&gt;" />
 
+        <variable
+            name="experienceListener"
+            type="com.emreonal.cvapp.presentation.common.customviews.IExperienceItem" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -33,7 +37,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="@dimen/dp_20"/>
+                android:padding="@dimen/dp_20"
+                tools:experiences="@{experiences}"
+                tools:experienceListener="@{experienceListener}"/>
 
         </ScrollView>
 

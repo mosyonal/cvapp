@@ -11,14 +11,8 @@ class ExperienceFragment: BaseFragment<FragmentExperienceBinding>(R.layout.fragm
 
     override fun onDataBound() {
         binding.toolbarLayout.registerActivity(activity)
-        val experiences = ExperienceCreator.create(requireContext())
-        binding.llExperiences.removeAllViews()
-        experiences.forEach {
-            val item = ExperienceItemView(binding.llExperiences.context)
-            item.experience = it
-            item.listener = this
-            binding.llExperiences.addView(item)
-        }
+        binding.experiences = ExperienceCreator.create(requireContext())
+        binding.experienceListener = this
     }
 
     override fun onInfoClick(info: String?) {
