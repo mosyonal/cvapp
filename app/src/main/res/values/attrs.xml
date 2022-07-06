@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="list_button_item">
+        <attr name="android:text" />
+    </declare-styleable>
+
+    <declare-styleable name="toolbar">
+        <attr name="title" format="string" />
+        <attr name="showBackButton" format="boolean" />
+        <attr name="android:background" />
+    </declare-styleable>
+
+    <declare-styleable name="dashed_line_view">
+        <attr name="lineColor" format="color" />
+    </declare-styleable>
+
+</resources>

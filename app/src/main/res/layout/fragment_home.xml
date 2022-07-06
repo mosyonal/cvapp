@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.emreonal.cvapp.R" />
+
+        <variable
+            name="listener"
+            type="com.emreonal.cvapp.presentation.home.IHome" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_145"
+            android:background="@color/color_primary"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:roundBottom="@{R.dimen.dp_50}"
+            tools:roundColor="@{R.color.color_primary}" />
+
+        <ImageView
+            android:id="@+id/iv_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bg_android"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_profile"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_120"
+            android:translationY="-40dp"
+            app:cardCornerRadius="@dimen/dp_60"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_banner"
+            app:strokeColor="@color/color_primary_dark"
+            app:strokeWidth="@dimen/dp_4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_4"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_profile" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.emreonal.cvapp.presentation.common.customviews.ListButtonItemView
+            android:id="@+id/btn_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_experience"
+            android:onClick="@{() -> listener.onExperienceClick()}"
+            app:layout_constraintTop_toBottomOf="@+id/mcv_profile" />
+
+        <com.emreonal.cvapp.presentation.common.customviews.ListButtonItemView
+            android:id="@+id/btn_skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_skills"
+            android:onClick="@{() -> listener.onSkillsClick()}"
+            app:layout_constraintTop_toBottomOf="@+id/btn_experience" />
+
+        <com.emreonal.cvapp.presentation.common.customviews.ListButtonItemView
+            android:id="@+id/btn_education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_education"
+            android:onClick="@{() -> listener.onEducationClick()}"
+            app:layout_constraintTop_toBottomOf="@+id/btn_skills" />
+
+        <com.emreonal.cvapp.presentation.common.customviews.ListButtonItemView
+            android:id="@+id/btn_language_others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_language_others"
+            android:onClick="@{() -> listener.onLanguageOthersClick()}"
+            app:layout_constraintTop_toBottomOf="@+id/btn_education" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

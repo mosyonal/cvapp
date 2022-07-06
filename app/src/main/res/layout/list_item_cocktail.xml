@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="item"
+            type="com.emreonal.core.data.local.entity.cocktail.CocktailEntity" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcv_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_250"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="@dimen/dp_40"
+        app:cardElevation="@dimen/dp_5"
+        app:rippleColor="@color/lavender_grey"
+        tools:layout_width="@dimen/dp_200">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:imageUrl="@{item.imageUrl}"
+                tools:src="@drawable/img_cocktail" />
+
+            <View
+                android:id="@+id/gradient_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gradient_transparent_black" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_30"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:includeFontPadding="false"
+                    android:text="@{item.name}"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_18"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Midnight Mind" />
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:layout_marginHorizontal="@dimen/dp_10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="start"
+                    android:includeFontPadding="false"
+                    android:text="@{item.category}"
+                    android:textColor="@color/lavender_grey"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="@{item.category == null ? View.GONE : View.VISIBLE}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_name"
+                    tools:text="Cocktail" />
+
+                <TextView
+                    android:id="@+id/tv_glass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="start"
+                    android:includeFontPadding="false"
+                    android:text="@{item.glass}"
+                    android:textColor="@color/lavender_grey"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="@{item.glass == null ? View.GONE : View.VISIBLE}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_category"
+                    tools:text="Cocktail Glass" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

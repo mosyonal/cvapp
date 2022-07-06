@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="com.emreonal.cvapp.presentation.examples.IExamples" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.emreonal.cvapp.presentation.common.customviews.EgToolbar
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:showBackButton="false"
+            app:title="@string/title_navigation_examples" />
+
+        <com.emreonal.cvapp.presentation.common.customviews.ListButtonItemView
+            android:id="@+id/btn_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/examples_cocktails"
+            android:layout_marginTop="@dimen/dp_20"
+            android:onClick="@{() -> listener.onCocktailsClick()}"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_layout" />
+
+        <com.emreonal.cvapp.presentation.common.customviews.ListButtonItemView
+            android:id="@+id/btn_skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/examples_notes"
+            android:onClick="@{() -> listener.onNotesClick()}"
+            app:layout_constraintTop_toBottomOf="@+id/btn_experience" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

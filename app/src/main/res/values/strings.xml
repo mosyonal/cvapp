@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">CV App</string>
+
+    <string name="title_navigation_home">Home</string>
+    <string name="title_navigation_examples">Examples</string>
+
+    <string name="home_experience">Experience</string>
+    <string name="home_skills">Skills</string>
+    <string name="home_education">Education</string>
+    <string name="home_language_others">Language &amp; Others</string>
+
+    <string name="year">Year</string>
+    <string name="years">Years</string>
+    <string name="month">Month</string>
+    <string name="months">Months</string>
+    <string name="present">Present</string>
+
+    <string name="title_skills">Skills</string>
+    <string name="title_tools">Tools</string>
+
+    <string name="experience_basarsoft_main_title">Basarsoft</string>
+    <string name="experience_basarsoft_intern_title">Intern</string>
+    <string name="experience_basarsoft_developer_title">Mobile Application Developer</string>
+    <string name="experience_etstur_main_title">Etstur</string>
+    <string name="experience_etstur_developer_title">Android Developer</string>
+    <string name="experience_etstur_lead_title">Mobile Team Lead</string>
+
+    <string name="experience_basarsoft_info">I worked on different projects (mostly in Android development) when  I was working at Basarsoft.  The projects are basically same thing "Field Workforce Management". Each application builded for different compainies therefor their workflows were different. Basically there is an admin panel for office workers who creates tasks with location and assigns to field worker or a team. After the assignment field team get a notification, they go to the task location by using our navigation and map. Then workflow begins according to companies\' needs. Sometimes it has tasks likes taking photos, fill forms, sometimes it has some drawings on the map for assignment and etc. Late days of my career at Basarsoft I did some basic iOS tasks so I started to learn iOS too.</string>
+    <string name="experience_etstur_info">&lt;p&gt;I was responsible of Odamax and Etstur Android projects bug fixes, new features and create new apps projects until October 2021. I am responsible of Ucuzabilet and Ubfly Android, API and iOS projects.&lt;/p&gt;
+        &lt;br&gt;&lt;/br&gt;
+        &lt;p&gt;&lt;strong&gt;Odamax&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;Odamax is an app which you can create reservation for hotels without payment.&lt;/p&gt;
+        &lt;p&gt;First days of my career at Etstur I recreate all of our api services and models for back-end change with UI changes because of the new data sets. After recreation of services I added some new features and pages too. I was the only Android developer for this project. In October 2021 we handed over the project to our Istanbul team.&lt;/p&gt;
+        &lt;p&gt;&lt;a href="https://play.google.com/store/apps/details?id=com.odamax&amp;hl=tr&amp;gl=US"\&gt;https://play.google.com/store/apps/details?id=com.odamax&amp;hl=tr&amp;gl=US&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;br&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Etstur&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;Etstur is an app which you can book hotels, plane tickets and tours.&lt;/p&gt;
+        &lt;p&gt;Etstur app had old UI and issues with api services which is going to change all for database change and app has old technologies, code did not written well. So our design team creates all new app with brand new design. I created new project from from screcth with new design patterns, base views etc. I did not use anything from old app. I was the only Android developer for the most of the time. We finished all hotel module and some part of the plane module. In October 2021 we handed over the project to our Istanbul team.&lt;/p&gt;
+        &lt;p&gt;&lt;a href="https://play.google.com/store/apps/details?id=com.etstur&amp;hl=tr&amp;gl=US"&gt;https://play.google.com/store/apps/details?id=com.etstur&amp;hl=tr&amp;gl=US&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;br&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Ucuzabilet&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;Ucuzabilet is an app which you can book hotels, plane tickets, transfers and rent cars.&lt;/p&gt;
+        &lt;p&gt;&lt;span&gt;In October 2021 we started to recreate hotel module of the project because it was working with old services which support will end. We did not have designer in that time so basically I design hotel module by myself with help of our Etstur project. I promoted to Mobile Team Lead after the hotel module finished and I became responsible for our mobile api too. Then my teammate went for military mission and I create Rent A Car module for Android app and API. I also worked on our iOS project too.&lt;/span&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;span&gt;&lt;a href="https://play.google.com/store/apps/details?id=com.ucuzabilet&amp;hl=tr&amp;gl=US"&gt;https://play.google.com/store/apps/details?id=com.ucuzabilet&amp;hl=tr&amp;gl=US&lt;/a&gt;&lt;/span&gt;&lt;/p &lt;br&gt;&lt;/br&gt; &lt;br&gt;&lt;/br&gt;</string>
+
+    <string name="education_cankaya">Cankaya University</string>
+    <string name="education_cankaya_description">Bachelor\'s degree, Computer Engineering, Full Scholarship\n2012–2017\nGPA 3.2/4.0</string>
+
+    <string name="language_title">Languages</string>
+    <string name="language_description">Turkish (Native or bilingual proficiency) \n\n English (Professional working proficiency)</string>
+    <string name="interests_title">Interest</string>
+    <string name="interests_description">Music\n\nSport\n\nTechnology</string>
+
+    <string name="examples_cocktails">Cocktails</string>
+    <string name="examples_notes">Notes</string>
+
+    <string name="cocktails_category">Category:</string>
+    <string name="cocktails_glass">Glass:</string>
+
+    <string name="cocktail_search_hint">Search Cocktail…</string>
+
+    <string name="title_cocktail_details">Details</string>
+    <string name="title_cocktail_instructions">Instructions</string>
+
+
+</resources>

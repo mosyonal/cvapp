@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/bg_gradient_transparent_purple.xml" value="0.201" />
+        <entry key="app/src/main/res/drawable/bg_rounded_transparent_black.xml" value="0.201" />
+        <entry key="app/src/main/res/drawable/bg_rounded_transparent_white.xml" value="0.201" />
+        <entry key="app/src/main/res/drawable/cursor_purple.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/ic_examples_selector.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable/ic_home_selector.xml" value="0.1655" />
+        <entry key="app/src/main/res/font/poppins.xml" value="0.18645833333333334" />
+        <entry key="app/src/main/res/layout/activity_cocktails.xml" value="0.13333333333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14406738281250003" />
+        <entry key="app/src/main/res/layout/fragment_cocktail_details.xml" value="0.23744964599609378" />
+        <entry key="app/src/main/res/layout/fragment_cocktails.xml" value="0.2269021739130435" />
+        <entry key="app/src/main/res/layout/fragment_education.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_examples.xml" value="0.13333333333333333" />
+        <entry key="app/src/main/res/layout/fragment_experience.xml" value="0.2380706787109375" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.17571563720703123" />
+        <entry key="app/src/main/res/layout/fragment_info.xml" value="0.2269021739130435" />
+        <entry key="app/src/main/res/layout/fragment_language_others.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_skills.xml" value="0.2460937500000001" />
+        <entry key="app/src/main/res/layout/layout_experience_item.xml" value="0.21015777587890627" />
+        <entry key="app/src/main/res/layout/layout_list_button_item.xml" value="0.18553614961928216" />
+        <entry key="app/src/main/res/layout/layout_search_text_field.xml" value="0.3376866658528646" />
+        <entry key="app/src/main/res/layout/layout_toolbar.xml" value="0.2540832519531251" />
+        <entry key="app/src/main/res/layout/list_item_cocktail.xml" value="0.3015670776367187" />
+        <entry key="app/src/main/res/layout/list_item_dot_text.xml" value="0.2792022792022792" />
+        <entry key="app/src/main/res/layout/list_item_experience.xml" value="0.41920374707259955" />
+        <entry key="app/src/main/res/layout/list_item_ingredient.xml" value="0.21104736328125004" />
+        <entry key="app/src/main/res/menu/menu_bottom_navigation.xml" value="0.2723831176757812" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

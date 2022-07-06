@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="skills"
+            type="java.util.List&lt;java.lang.String&gt;" />
+
+        <variable
+            name="tools"
+            type="java.util.List&lt;java.lang.String&gt;" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.emreonal.cvapp.presentation.common.customviews.EgToolbar
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/home_skills" />
+
+        <TextView
+            android:id="@+id/tv_skills_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_20"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            android:text="@string/title_skills"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_layout" />
+
+        <LinearLayout
+            android:id="@+id/ll_skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv_skills_title"
+            tools:dotTexts="@{skills}" />
+
+        <TextView
+            android:id="@+id/tv_tools_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_20"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            android:text="@string/title_tools"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_skills" />
+
+        <LinearLayout
+            android:id="@+id/ll_tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tools_title"
+            tools:dotTexts="@{tools}" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

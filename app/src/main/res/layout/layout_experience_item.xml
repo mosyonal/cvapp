@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            tools:src="@drawable/ic_basarsoft"
+            android:scaleType="fitCenter"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="start"
+            tools:text="Basarsoft"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_5"
+            app:layout_constraintTop_toTopOf="@id/iv_logo"
+            app:layout_constraintStart_toEndOf="@+id/iv_logo"
+            android:includeFontPadding="false"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/sp_16"
+            android:paddingEnd="@dimen/dp_5"
+            android:paddingStart="@dimen/dp_1"
+            android:drawablePadding="@dimen/dp_15"
+            app:drawableEndCompat="@drawable/ic_info"
+            app:drawableTint="@color/color_primary_dark" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="start"
+            tools:text="3 years 5 months"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_logo"
+            android:includeFontPadding="false"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp_13"/>
+
+        <LinearLayout
+            android:id="@+id/ll_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv_time"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

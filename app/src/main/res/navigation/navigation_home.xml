@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_home"
+    app:startDestination="@id/fragment_home">
+
+    <fragment android:id="@+id/fragment_home"
+        android:name="com.emreonal.cvapp.presentation.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_experience"
+            app:destination="@id/fragment_experience"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_home_to_skills"
+            app:destination="@id/fragment_skills"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_home_to_education"
+            app:destination="@id/fragment_education"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_home_to_language_others"
+            app:destination="@id/fragment_language_others"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_experience"
+        android:name="com.emreonal.cvapp.presentation.experience.ExperienceFragment"
+        tools:layout="@layout/fragment_experience" />
+
+    <fragment
+        android:id="@+id/fragment_skills"
+        android:name="com.emreonal.cvapp.presentation.skills.SkillsFragment"
+        tools:layout="@layout/fragment_skills" />
+
+    <fragment
+        android:id="@+id/fragment_education"
+        android:name="com.emreonal.cvapp.presentation.education.EducationFragment"
+        tools:layout="@layout/fragment_education" />
+
+    <fragment
+        android:id="@+id/fragment_language_others"
+        android:name="com.emreonal.cvapp.presentation.languageothers.FragmentLanguageOthers"
+        tools:layout="@layout/fragment_language_others" />
+
+</navigation>

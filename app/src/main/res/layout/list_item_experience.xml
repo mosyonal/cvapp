@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_dot_top"
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_10"
+            android:src="@drawable/ic_circle"
+            android:layout_marginStart="@dimen/dp_10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_job_title"
+            app:layout_constraintTop_toTopOf="@+id/tv_job_title"/>
+
+        <TextView
+            android:id="@+id/tv_job_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="start"
+            tools:text="Intern"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_marginEnd="@dimen/dp_5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:includeFontPadding="false"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/sp_16"/>
+
+        <TextView
+            android:id="@+id/tv_time_job"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="start"
+            tools:text="3 months"
+            android:layout_marginEnd="@dimen/dp_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_job_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_job_title"
+            android:includeFontPadding="false"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp_13"/>
+
+        <com.emreonal.cvapp.presentation.common.customviews.DashedLineView
+            android:id="@+id/dashed_line"
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="0dp"
+            app:lineColor="@color/eton_blue"
+            android:layout_marginVertical="@dimen/dp_4"
+            app:layout_constraintEnd_toEndOf="@+id/iv_dot_top"
+            app:layout_constraintTop_toBottomOf="@+id/iv_dot_top"
+            app:layout_constraintBottom_toTopOf="@+id/view_bottom"
+            app:layout_constraintStart_toStartOf="@id/iv_dot_top"/>
+
+        <View
+            android:id="@+id/view_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_dot_top"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

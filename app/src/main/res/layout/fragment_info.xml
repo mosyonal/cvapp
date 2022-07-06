@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.emreonal.cvapp.R" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_notch"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_6"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/bg_rounded_transparent_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cl_content"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_20"
+            tools:roundColor="@{R.color.white}"
+            tools:roundTop="@{R.dimen.dp_30}"
+            app:layout_constraintTop_toBottomOf="@+id/view_notch">
+
+            <ImageButton
+                android:id="@+id/ib_close"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_close"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                app:layout_constraintTop_toBottomOf="@+id/ib_close">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="start"
+                        tools:text="Basarsoft"
+                        android:layout_marginHorizontal="@dimen/dp_20"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingBottom="@dimen/dp_100"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/sp_16"
+                        android:paddingEnd="@dimen/dp_5"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:paddingStart="@dimen/dp_1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

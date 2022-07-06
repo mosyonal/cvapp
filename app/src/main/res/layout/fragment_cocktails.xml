@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.emreonal.cvapp.presentation.examples.cocktails.main.CocktailsViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"
+            android:src="@drawable/img_bg_cocktail"
+            android:scaleType="centerCrop"
+            android:paddingTop="@dimen/dp_25"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.emreonal.cvapp.presentation.examples.cocktails.customviews.SearchTextField
+            android:id="@+id/search_text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginHorizontal="@dimen/dp_20"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_250"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:lottie_fileName="drink_loader.json"
+            app:lottie_autoPlay="true"
+            app:lottie_speed="2"
+            app:lottie_loop="true"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cocktails"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingVertical="@dimen/dp_10"
+            tools:listitem="@layout/list_item_cocktail"
+            tools:cocktails="@{viewModel.cocktails}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_text_field"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#49A078</color>
+    <color name="color_primary_dark">#216869</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent_white_50">#80FFFFFF</color>
+    <color name="transparent_black_40">#6A000000</color>
+    <color name="dark">#1A1D1B</color>
+    <color name="platinum">#DCE1DE</color>
+    <color name="eton_blue">#9CC5A1</color>
+    <color name="blue_ncs">#508AA8</color>
+    <color name="cornflower_blue">#9DD1F1</color>
+    <color name="grey">#8c8c8c</color>
+    <color name="light_grey">#D3D3D3</color>
+    <color name="bg_green">#A9EFB1</color>
+
+
+    <color name="thistle">#BFACC8</color>
+    <color name="lavender_grey">#C8C6D7</color>
+    <color name="english_violet">#4A4063</color>
+    <color name="maximum_purple">#783F8E</color>
+    <color name="cocktail_toolbar">#785ff6</color>
+
+</resources>

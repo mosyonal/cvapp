@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_cocktails"
+    app:startDestination="@id/fragment_cocktails">
+
+    <fragment android:id="@+id/fragment_cocktails"
+        android:name="com.emreonal.cvapp.presentation.examples.cocktails.main.CocktailsFragment"
+        tools:layout="@layout/fragment_cocktails">
+
+        <action
+            android:id="@+id/action_to_cocktail_details"
+            app:destination="@id/fragment_cocktail_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_cocktail_details"
+        android:name="com.emreonal.cvapp.presentation.examples.cocktails.detail.CocktailDetailsFragment"
+        tools:layout="@layout/fragment_cocktail_details">
+
+        <argument
+            android:name="arg_cocktail_id"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>
+
+</navigation>
